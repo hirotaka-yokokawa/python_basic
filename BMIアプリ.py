@@ -15,7 +15,10 @@ formula = pow(input_Height,2)
 formula_2 = (input_Weight / formula)
 BMI = (formula_2 * 10000)
 
-print(f"Your BMI is {BMI}")
+text = "Your BMI is {:.2f}"
+print(text.format(BMI))
+
+
 
 
 
