@@ -2,28 +2,22 @@
 #"Name: Tom, Age: 57"
 #"Name: Bob, Age: 77"
 
-class User:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# users_info = [["Kazuma", 35],
+#               ["Tom", 57],
+#               ["Bob", 77]]
 
-    def display_profile(self):
-        print(f"Name: {self.name}, Age: {self.age}")
+users_info = [["Kazuma", 35],
+              ["Tom", 57],
+              ["Bob", 77]]
+
+for user in users_info:
+    print(f"Name: {user[0]}, Age: {user[1]}")
 
 
-if __name__ == "__main__":
-    users_info = [["Kazuma", 35],
-                  ["Tom", 57],
-                  ["Bob", 77]]
 
-    kazuma = User("Kazuma", 35)
-    kazuma.display_profile()
 
-    tom = User("Tom", 57)
-    tom.display_profile()
 
-    bob = User("Bob", 77)
-    bob.display_profile()
+
 
 
 
